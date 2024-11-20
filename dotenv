@@ -1,3 +1,4 @@
-AUTH_GITHUB_ID=
-AUTH_GITHUB_SECRET=
-AUTH_SECRET= # https://generate-secret.vercel.app/32
+GITHUB_ID=
+GITHUB_SECRET=
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET= # https://generate-secret.vercel.app/32
