@@ -3,7 +3,7 @@ import {
 } from "@/components/LoginButton";
 import {
   LogoutButton,
-} from "@/components/LgoutButton";
+} from "@/components/LogoutButton";
 
 export default async function Home() {
 
