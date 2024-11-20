@@ -7,7 +7,7 @@ export const LoginButton = () => {
   // フォーム送信処理
   const onSubmit = async (data: { email: string, password: string }) => {
 
-    const result = await signIn('user', {
+    const result = await signIn('email-login', {
       redirect: false,
       email: data.email,
       password: data.password
@@ -16,13 +16,14 @@ export const LoginButton = () => {
     if (result?.error) {
       alert("ログイン失敗")
     } else {
-      location.href = '/dashboard'
+    //   location.href = '/dashboard'
+    console.log(result);
     }
   }
   return (
     <>
       <button style={{ marginRight: 10 }} onClick={() => onSubmit({ email: "user1@example.com", password: "password1" })}>
-        Sign in
+        Emailログイン
       </button>
       <button style={{ marginRight: 10 }} onClick={() => signIn()}>
         Sign in
